@@ -7,7 +7,6 @@ import java.util.List;
 
 public interface ClubService {
 
-    List<ClubDTO> getAllClubs();
     ClubDTO getClubById(Long id);
     ClubDTO saveClub(ClubDTO clubDTO);
     void deleteClub(Long id);
