@@ -1,6 +1,7 @@
 package com.dog.apimundial.controller;
 
 import com.dog.apimundial.service.ClubService;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,12 @@ public class ClubController {
     @PostMapping("")
     public String createClub() {
         return "Club created successfully";
+    }
+
+    @DeleteMapping("/{id}")
+    public String deleteClub(Long id) {
+        clubService.deleteClub(id);
+        return "Club deleted successfully";
     }
 
 
