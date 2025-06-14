@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/unistay
+    url: jdbc:postgresql://localhost:5432/club-api
     username: postgres
     password: 0101
     driver-class-name: org.postgresql.Driver
