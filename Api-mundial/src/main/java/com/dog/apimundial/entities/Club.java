@@ -3,8 +3,11 @@ package com.dog.apimundial.entities;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.*;
+import lombok.*;
 
-
+@Entity
+@Getter
+@Setter
 public class Club {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,4 +15,6 @@ public class Club {
     private String name;
     private String country;
     private int titles;
+
+
 }
